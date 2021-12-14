@@ -1,0 +1,1 @@
+//WAP to display the minimum value among the array values
