@@ -3,24 +3,30 @@
 
 using namespace std;
 
- int area(int rad)
+ float areaofcircle(int rad)
  {
- 	cout<<"\n Area of circle="<<(3.14*rad*rad);
+ 	
+	 return (3.14*rad*rad);
  }
- int area(int b,int h)
+ int areaoftriangle(int b,int h)
  {
- 	cout<<"\n Area of Triangle="<<(0.5*b*h);
+	
+	return (0.5*b*h);
  }
- int area(float side)
+ int areasquare(float side)
  {
- 	cout<<"\n Area of Square="<<(side*side);
+ 	
+	 return (side*side);
  }
 int main()
 {
-	 area(4);
+	 float AOC = areaofcircle(4);
 	 
-	 area(5,4);
+	 int AOT = areaoftriangle(5,4);
 	 
-	 area(6.0f);
-	 
+	 int AOS = areasquare(6.0f);
+	 cout<<"\n Area of circle="<<AOC;
+	cout<<"\n Area of Triangle="<<AOT;
+	cout<<"\n Area of Square="<<AOS;
+
 }

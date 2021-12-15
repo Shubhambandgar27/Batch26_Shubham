@@ -26,13 +26,12 @@ int main()
     {
         cout<<" "<<arr[i];
     }
-    int ans= sortbyarr(arr);
-            
-
+    sortbyarr(arr);
+    
     cout<<"\n after sorting= ";
     for(int i=0;i<5;i++)
     {
-      cout<<" "<<ans;
+      cout<<" "<<arr[i];
     }
    
     return 0;

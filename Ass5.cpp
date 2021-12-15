@@ -8,23 +8,17 @@ int factorialof(int no)
         fact=fact*i;
          
     }
-      return fact;
-      
-    
-    
+      return fact;  
 }
 
 int main()
 {
-     
-    cout<<"\n factorial of first 10 numbers=\n ";
+     cout<<"\n factorial of first 10 numbers=\n ";
     
     for(int i=1;i<=10;i++)
     {   
         int ans = factorialof(i);
         cout<<ans<<"\n ";
     }
-    
-
 
 }
