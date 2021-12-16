@@ -4,22 +4,21 @@
 using namespace std;
 int searchbyarray(int arr[])
 { int min=arr[0];
-  for(int i=0;i<5;i++)
+  for(int i=1;i<5;i++)
   {
-    for(int ci=i+1;ci<5;ci++)
-    {
-        if(arr[i]<arr[ci])
+   
+        if(min>arr[i])
          min=arr[i];
        
-    }
+    
   }
   return min;
 }
 int main()
 {
-    int arr[5]={27,14,8,70,21};
+    int arr[5]={12,16,21,3,7};
     int ans=searchbyarray(arr);
-    cout<<"\n Given array=";
+cout<<"\n Given array=";
     for(int i=0;i<5;i++)
     {
         cout<<"\t"<<arr[i];
